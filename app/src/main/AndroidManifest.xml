@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.NPR.MemeGenerator" >
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.NPR.MemeGenerator.TakePictureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="@string/image_mime_type" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.NPR.MemeGenerator.EnterTextActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.NPR.MemeGenerator.TakePictureActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

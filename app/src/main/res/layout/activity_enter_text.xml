@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/stage_two_instructions_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/stage_two"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/selected_picture_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:id="@+id/top_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Top Text"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/top_text_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:hint="@string/top_text_filler"
+        android:nextFocusDown="@+id/bottom_text_edittext"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/bottom_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Bottom Text"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/bottom_text_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:hint="@string/bottom_text_filler"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/write_text_to_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lets_memeify" />
+
+        <Button
+            android:id="@+id/save_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/save_image" />
+
+    </LinearLayout>
+
+</LinearLayout>
